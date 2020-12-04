@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+}
+
+.div{
+    display: grid;
+    grid-template-areas: 
+    'he he he he he'
+    'as di di di di'
+    'as di di di di'
+    'as di di di di'
+    'as di di di di'
+    'fo fo fo fo fo'
+    ;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    height: 200vh;
+    width: 100vw;
+}
+
+.header{
+    grid-area: he;
+    background-image: url(../misc/imgdumb/oceanifloor.jpg);
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 193px;
+    justify-content: center;
+}
+
+.aside{
+    grid-area: as;
+    background-color: yellow;
+}
+
+.megagrid{
+    grid-area: di;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    'tx1 bil'
+    'box txt2'
+    ;
+}
+
+.gronbox{
+    grid-area: box;
+    background-color: darkmagenta;
+}
+
+.footer{
+    grid-area: fo;
+    display: flex;
+    background-image: url(../misc/imgdumb/realicus-567.jpg);
+}
+
+.text1{
+    grid-area: tx1;
+    background-color: blue;
+
+}
+
+.text2{
+    grid-area: tx2;
+    background-color: rgb(25, 75, 25);
+}
+
+.bild{
+    grid-area: bil;
+}
+
+.merk{
+height: 367px;
+width: 550px;
+}
