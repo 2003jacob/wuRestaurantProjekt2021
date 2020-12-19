@@ -7,7 +7,7 @@ body{
     background-image: url(/img/oceanicus.jpg);
 }
 
-.div{
+.startsida{
     display: grid;
     grid-template-areas: 
     'he he he he he'
@@ -21,6 +21,19 @@ body{
     grid-template-rows: 50px 1fr 1fr 1fr 1fr 1fr;
     height: 1000px;
     width: 100vw;
+}
+
+.menu{
+    display: grid;
+    grid-template-areas: 
+    'he he'
+    'bo bo'
+    'bo bo'
+    ;
+    grid-template-columns: 100vw;
+    grid-template-rows: 50px 1fr 1fr;
+    height: 1000px;
+    width: 100vh;
 }
 
 .header{
@@ -64,6 +77,7 @@ body{
 .footer{
     grid-area: fo;
     display: flex;
+    justify-content: center;
     background-image: url(/img/realicus-567.jpg);
 }
 
@@ -105,6 +119,18 @@ h3{
     color: yellow;
 }
 
+h4{
+    font-size: 30px;
+    color: yellow;
+}
+
+h5{
+    color: none;
+    font-size: 40px;
+    margin-top: 65px;
+    margin-left: 35px;
+}
+
 .boxbox{
     grid-area: gro;
     background-color:rgb(30, 190, 102);
@@ -122,12 +148,57 @@ h3{
     margin-left: 10px;
 }
 
-h4{
-    font-size: 30px;
-    color: yellow;
-}
-
 .rea{
     grid-area: sig;
     height: 200px;
+}
+
+.box{
+    grid-area: bo;
+    margin: 100px;
+    display: grid;
+    grid-template-areas: 
+    'sil sil kop'
+    'rat rat rat'
+    ;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    border-radius: 100px;
+}
+
+.sill{
+    grid-area: sil;
+    width: 750px;
+
+}
+
+.rating{
+    margin-left: 50px;
+    margin-top: 50px;
+    grid-area: rat;
+    width: 1000px;
+}
+
+.circle{
+    display: flex;
+    border-radius: 100px;
+    background-color: green;
+    height: 200px;
+    width: 200px;
+    margin-left: 80px;
+    ;
+}
+
+.thankyou{
+    display: flex;
+    margin-left: 375px;
+    margin-top: 300px;
+}
+
+.varningbox{
+    display: grid;
+    grid-template-areas: 
+    'varning'
+    ;
+    margin-top: 50px;
 }
